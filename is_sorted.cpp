@@ -44,6 +44,11 @@ void testMiddleUnsorted() {
     assert(isSorted(arr, 3) == false);
     cout << "testMiddleUnsorted Passed" << endl;
 }
+bool isSorted(const int* arr, const int size) {
+    if (size <= 1) return true;
+    if (arr[0] > arr[1]) return false; 
+    return true;
+}
 // MAIN 
 int main() {
     cout << "Running TDD Test Cases..." << endl;
